@@ -10,7 +10,7 @@ console.log('test - module')
 console.log('======================')
 export default {
   name: 'TestModule',
-  mounted() {}
+  mounted () {}
 }
 </script>
 <style scoped>
