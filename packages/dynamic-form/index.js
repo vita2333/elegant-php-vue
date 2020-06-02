@@ -1,8 +1,10 @@
+import './index.css'
+
 const Component = {
   name: 'DynamicForm',
   render() {
     return (
-      <div class={'component-jsx'}>
+      <div class={'dynamic-form'}>
         <h1>component-jsx</h1>
       </div>
     )
