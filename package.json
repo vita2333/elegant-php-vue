@@ -1,56 +1,49 @@
 {
   "name": "vue-lib-starter",
   "version": "0.0.1",
-  "description": "A library packaging tool based on rollup and vue-cli3",
   "private": false,
+  "description": "A library packaging tool based on rollup and vue-cli3",
   "author": "wenbin.chen <anncwb@126.com>",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development && vue-cli-service serve --copy",
+    "test:unit": "vue-cli-service test:unit",
+    "bootstrap": "yarn install",
+    "docs:build": "vuepress build docs",
+    "docs:dev": "vuepress dev docs",
+    "lib": "cross-env NODE_ENV=production rimraf ./lib && node ./build/rollup.build.js",
+    "lib:cli": "cross-env rimraf ./lib && node ./build/cli.build.js",
+    "lint:css": "cross-env  stylelint 'packages/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'examples/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'src/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'docs/.vuepress/**/*.{html,vue,css,less,scss,styl}' --fix",
+    "lint:prettier": "cross-env prettier --write \"src/**/*.js\" \"src/**/*.vue\" --loglevel warn",
+    "precommit": "lint-staged",
+    "pub:cli": "npm run uv && npm run lib:cli && npm publish",
+    "pub:rollup": "npm run uv && npm run lib && npm publish",
+    "uv": "cross-env node ./script/update.version.js",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
   "main": "lib/index.js",
-  "license": "MIT",
-  "keywords": [
-    "vue"
-  ],
   "files": [
     "lib",
     "src",
     "packages",
     "types"
   ],
-  "style": "lib/theme/index.css",
-  "repository": {
-    "type": "git",
-    "url": "x"
-  },
-  "homepage": "x",
-  "bugs": {
-    "url": "x"
-  },
-  "scripts": {
-    "bootstrap": "yarn install",
-    "serve": "cross-env NODE_ENV=development && vue-cli-service serve --copy",
-    "lib:cli": "cross-env rimraf ./lib && node ./build/cli.build.js",
-    "lib": "cross-env NODE_ENV=production rimraf ./lib && node ./build/rollup.build.js",
-    "lint:prettier": "cross-env prettier --write \"src/**/*.js\" \"src/**/*.vue\" --loglevel warn",
-    "lint:css": "cross-env  stylelint 'packages/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'examples/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'src/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'docs/.vuepress/**/*.{html,vue,css,less,scss,styl}' --fix",
-    "test:unit": "vue-cli-service test:unit",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "precommit": "lint-staged",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "pub:rollup": "npm run uv && npm run lib && npm publish",
-    "pub:cli": "npm run uv && npm run lib:cli && npm publish",
-    "uv": "cross-env node ./script/update.version.js"
-  },
   "dependencies": {
-    "glob": "^7.1.6"
+    "ant-design-vue": "^1.6.1",
+    "glob": "^7.1.6",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
+    "@types/jest": "^23.1.4",
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-typescript": "~4.4.0",
     "@vue/cli-plugin-unit-jest": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
     "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "@vuepress/plugin-back-to-top": "^1.0.4",
     "@vuepress/plugin-medium-zoom": "^1.0.4",
@@ -95,6 +88,8 @@
     "stylelint-config-standard": "^18.3.0",
     "stylelint-order": "^3.1.0",
     "stylelint-webpack-plugin": "^0.10.5",
+    "ts-jest": "^23.0.0",
+    "typescript": "~3.9.3",
     "vue": "^2.6.10",
     "vue-highlight.js": "^2.2.0",
     "vue-router": "^3.1.3",
@@ -105,15 +100,23 @@
     "webpack-cli": "^3.3.8",
     "webpack-merge": "^4.2.2"
   },
+  "bugs": {
+    "url": "x"
+  },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "homepage": "x",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "keywords": [
+    "vue"
+  ],
+  "license": "MIT",
   "lint-staged": {
     "src/**/*.{js}": [
       "prettier --write",
@@ -143,5 +146,10 @@
       "eslint --fix",
       "git add"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "x"
+  },
+  "style": "lib/theme/index.css"
 }
