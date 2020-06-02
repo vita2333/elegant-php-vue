@@ -21,10 +21,6 @@ function dynamicForm (
   props: DynamicFormProps,
   slots: DynamicFormSlots,
   ctx: RenderContext<DefaultProps>) {
-  console.log('======================')
-  console.log('slots:')
-  console.log(slots) // todo
-  console.log('======================')
   return (
     <div class={ 'dynamic-form' }>
       <h1>component-jsx</h1>
