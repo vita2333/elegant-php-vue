@@ -1,4 +1,4 @@
-import FileHandle from '../packages/file-handle/index'
+import FileHandle from '../packages/dynamic-form/index'
 import TestModule from '../packages/test-module/index'
 import { version } from '../package.json'
 

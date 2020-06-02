@@ -1,19 +1,19 @@
 <template>
-  <div class="file-handle">
-    file-handle
+  <div class="dynamic-form">
+    dynamic-form
   </div>
 </template>
 
 <script>
 console.log('======================')
-console.log('file-handle')
+console.log('dynamic-form')
 console.log('======================')
 export default {
-  name: 'FileHandle'
+  name: 'DynamicForm'
 }
 </script>
 <style scoped>
-.file-handle {
+.dynamic-form {
   background: blue;
 }
 </style>

@@ -11,10 +11,10 @@
 </template>
 
 <script>
-  import { Button } from 'element-ui'
-  import 'element-ui/lib/theme-chalk/button.css'
+import { Button } from 'element-ui'
+import 'element-ui/lib/theme-chalk/button.css'
 
-  export default {
+export default {
   name: 'HelloWorld',
   components: { Button },
   props: {
