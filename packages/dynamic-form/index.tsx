@@ -1,23 +1,22 @@
 import './index.css'
+import { CreateElement, RenderContext } from 'vue'
+import { createComponent, DefaultSlots } from '../utils/create'
+import { DefaultProps } from 'vue/types/options'
 
+const createFunc = createComponent('dynamic-form')
 console.log('======================')
 console.log('dynamicForm:')
 console.log('======================')
 
-function render (h: any) {
+function dynamicForm (
+  h: CreateElement,
+  props: DefaultProps,
+  slots: DefaultSlots,
+  ctx: RenderContext<DefaultProps>) {
   return (
     <div class={ 'dynamic-form' }>
       <h1>component-jsx</h1>
     </div>)
 }
 
-const Component: any = {
-  name: 'DynamicForm',
-  render
-}
-
-Component.install = (vue: any) => {
-  vue.component(Component.name, Component)
-}
-
-export default Component
+export default createFunc(dynamicForm)

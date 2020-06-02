@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <dynamic-form />
+    <epv-dynamic-form />
   </div>
 </template>
 
