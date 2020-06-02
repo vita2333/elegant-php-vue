@@ -68,7 +68,7 @@ function unifySlots (context: RenderContext) {
 const prefix = 'epv-'
 
 export function createComponent (name: string) {
-  return function <Props, Events, Slots> (sfc: UIComponentOptions | FunctionComponent) {
+  return function <Props = DefaultProps, Events = {}, Slots = {}> (sfc: UIComponentOptions | FunctionComponent) {
     if (isFunction(sfc)) {
       sfc = transformFunctionComponent(sfc)
     }

@@ -1,15 +1,14 @@
 <template>
   <div class="home">
-    <epv-dynamic-form />
+    <dynamic-form-demo />
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import DynamicForm from '@p/dynamic-form'
+import DynamicFormDemo from '@p/dynamic-form/demo'
 
-Vue.use(DynamicForm)
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: { DynamicFormDemo }
 }
 </script>

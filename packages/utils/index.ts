@@ -30,3 +30,16 @@ export function get (object: any, path: string): any {
 
   return result
 }
+
+export function decamelize (str: string, sep = '-') {
+  return str.replace(/([a-z\d])([A-Z])/g, '$1' + sep + '$2')
+    .replace(/([A-Z]+)([A-Z][a-z\d]+)/g, '$1' + sep + '$2')
+    .toLowerCase()
+}
+
+// promisify setTimeout
+export function later (delay: number = 0): Promise<void> {
+  return new Promise(resolve => {
+    setTimeout(resolve, delay)
+  })
+}

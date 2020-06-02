@@ -1,5 +1,6 @@
 import { mount, Wrapper } from '@vue/test-utils'
 import component, { DynamicFormProps } from '../index'
+import './demo.spec'
 
 describe('dynamic-form', () => {
   let wrapper: Wrapper<Vue>
