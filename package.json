@@ -1,6 +1,6 @@
 {
   "name": "vue-lib-starter",
-  "version": "0.0.10",
+  "version": "0.0.1",
   "description": "A library packaging tool based on rollup and vue-cli3",
   "private": false,
   "author": "wenbin.chen <anncwb@126.com>",
@@ -40,7 +40,9 @@
     "pub:cli": "npm run uv && npm run lib:cli && npm publish",
     "uv": "cross-env node ./script/update.version.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "glob": "^7.1.6"
+  },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
