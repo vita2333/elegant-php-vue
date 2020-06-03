@@ -1,7 +1,7 @@
 <template>
   <DynamicForm
     ref="form"
-    :default-form-values="defForm"
+    v-model="model"
     :fields="fields"
     :on-fields-change="onFieldsChange"
     :on-values-change="onValuesChange"
@@ -21,7 +21,7 @@ import { FieldTypes, Rules } from '@/types/enum'
   }
 })
 export default class TestModuleDemo extends Vue {
-  defForm: any = {}
+  model: any = {}
   fields: Fields = {
     text: {
       label: 'text',
@@ -34,7 +34,7 @@ export default class TestModuleDemo extends Vue {
 
   mounted () {
     setTimeout(() => {
-      this.defForm = {
+      this.model = {
         text: 170
       }
     }, 2000)

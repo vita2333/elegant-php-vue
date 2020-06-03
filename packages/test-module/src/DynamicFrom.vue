@@ -19,7 +19,7 @@
           <component
             :is="componentMap[field.type]"
             :field="field"
-            :field-default-value="defaultFormValues[key]"
+            :field-default-value="_value[key]"
             :field-key="key"
           />
         </a-col>
@@ -31,7 +31,7 @@
         v-else
         :key="key"
         :field="field"
-        :field-default-value="defaultFormValues[key]"
+        :field-default-value="_value[key]"
         :field-key="key"
         :layout="layout.formItem"
       />
@@ -97,7 +97,7 @@ export default class DynamicForm extends Vue {
       return {}
     }
   })
-  readonly defaultFormValues!: any
+  readonly value!: any
 
   @Prop({
     type: Object,
@@ -131,6 +131,14 @@ export default class DynamicForm extends Vue {
   readonly onFieldsChange: ((props: Vue, fields: AntField) => void) | undefined
 
   form: Vue | WrappedFormUtils | null = null
+
+  get _value () {
+    return this.value
+  }
+
+  set _value (value: any) {
+    this.$emit('input', value)
+  }
 
   get _fields (): Fields {
     const fields = { ...this.fields }
