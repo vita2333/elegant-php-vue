@@ -35,22 +35,7 @@ export default class TestModuleDemo extends Vue {
   mounted () {
     setTimeout(() => {
       this.defForm = {
-        text: 170,
-        picker: '1',
-        search_id: '338',
-        search: {
-          name: '哈哈哈哈'
-        },
-        tel: 'sdfsdfdf',
-        timer: '13:20',
-        datetime: '2015-02-12 12:00',
-        myTel: '123123123',
-        myName: '哈哈',
-        checkers: ['1', 'dsf'],
-        img: '',
-        switch: 'open',
-        editor:
-          '<p>我是圣诞快</p><p class="ql-align-center">乐副经理开始对方就凉快圣诞节疯狂劳动竞赛看咯防静电搜开了房</p><p class="ql-align-center"><img src="https://img.meijinw.com/1571655332847.png"></p>'
+        text: 170
       }
     }, 2000)
   }
