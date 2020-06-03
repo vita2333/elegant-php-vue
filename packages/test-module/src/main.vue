@@ -3,7 +3,14 @@
     ref="dyForm"
     v-model="form"
     :fields="fields"
-  />
+  >
+    <div slot="header">
+      这里是Form Header
+    </div>
+    <!--    <div slot="footer">-->
+    <!--      这里是Form Footer-->
+    <!--    </div>-->
+  </DynamicForm>
 </template>
 
 <script lang="ts">
@@ -118,7 +125,7 @@ export default class TestModuleDemo extends Vue {
   mounted () {
     setTimeout(() => {
       this.form = {
-        name: '',
+        name: '测试活动',
         region: '',
         date1: '',
         date2: '',
