@@ -1,14 +1,16 @@
 <template>
   <div class="home">
-    <dynamic-form-demo />
+    <TestModuleDemo />
   </div>
 </template>
 
 <script>
-import DynamicFormDemo from '@p/dynamic-form/demo'
+import Vue from 'vue'
+import TestModuleDemo from '@p/test-module'
 
+Vue.use(TestModuleDemo)
 export default {
   name: 'Home',
-  components: { DynamicFormDemo }
+  components: {}
 }
 </script>

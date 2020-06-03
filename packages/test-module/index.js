@@ -1,7 +1,7 @@
 import TestModule from './src/main.vue'
 
 TestModule.install = (vue) => {
-  vue.component(name, TestModule)
+  vue.component(TestModule.name, TestModule)
 }
 
 export default TestModule
