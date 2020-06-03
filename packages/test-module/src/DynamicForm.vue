@@ -1,61 +1,35 @@
 <template>
   <div>
-    <a-form
-      v-if="form"
-      id="dynamic-form"
-      :form="form"
-      @submit="handleSubmit"
-    >
-      <!--一行的表单-->
-      <a-row
-        v-if="layout.formRow"
-        v-bind="layout.formRow"
-      >
-        <a-col
-          v-for="(field, key) in _fields"
-          :key="key"
-          v-bind="layout.formCol"
-        >
-          <component
-            :is="componentMap[field.type]"
-            :field="field"
-            :field-default-value="_value[key]"
-            :field-key="key"
-          />
-        </a-col>
-      </a-row>
-      <!--一列的表单-->
-      <component
-        :is="componentMap[field.type]"
+    <a-form-model :model="_value">
+      <a-form-model-item
         v-for="(field, key) in _fields"
-        v-else
+        v-show="!field.hidden"
         :key="key"
-        :field="field"
-        :field-default-value="_value[key]"
-        :field-key="key"
-        :layout="layout.formItem"
-      />
-      <slot name="footer" />
-      <a-form-item :wrapper-col="{ span: 12, offset: 6 }">
-        <slot name="button">
-          <a-button
-            :loading="btnLoading"
-            html-type="submit"
-            type="primary"
-          >
-            提交
-          </a-button>
-          <a-button
-            class="ml15"
-            html-type="button"
-            type="default"
-            @click="reset"
-          >
-            重置
-          </a-button>
-        </slot>
-      </a-form-item>
-    </a-form>
+        :extra="field.desc"
+        :has-feedback="true"
+        :label="field.label"
+        :prop="key"
+        :required="field.required"
+        v-bind="layout"
+      >
+        <component
+          :is="InputTypeMap[field.type]"
+          v-model="_value[key]"
+        />
+      </a-form-model-item>
+
+      <a-form-model-item :wrapper-col="{ span: 14, offset: 4 }">
+        <a-button
+          type="primary"
+          @click="onSubmit"
+        >
+          Create
+        </a-button>
+        <a-button style="margin-left: 10px;">
+          Cancel
+        </a-button>
+      </a-form-model-item>
+    </a-form-model>
   </div>
 </template>
 
@@ -63,10 +37,11 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 // eslint-disable-next-line no-unused-vars
 import { AntField, Fields } from '@/types/common'
-import { FieldTypes } from '@/types/enum'
 import InputText from './basic/InputText.vue'
 // eslint-disable-next-line no-unused-vars
 import { WrappedFormUtils } from 'ant-design-vue/types/form/form'
+import DynamicFormItem from './DynamicFormItem.vue'
+import { InputTypeMap } from './utils'
 
 /**
    * 组件必须有:prop:value 和 emit('change')
@@ -80,7 +55,8 @@ import { WrappedFormUtils } from 'ant-design-vue/types/form/form'
    */
 @Component({
   components: {
-    InputText
+    InputText,
+    DynamicFormItem
   }
 })
 export default class DynamicForm extends Vue {
@@ -149,10 +125,8 @@ export default class DynamicForm extends Vue {
     this.$emit('update:fields', val)
   }
 
-  get componentMap () {
-    return {
-      [FieldTypes.text]: 'InputText'
-    }
+  get InputTypeMap () {
+    return InputTypeMap
   }
 
   created () {
@@ -175,6 +149,12 @@ export default class DynamicForm extends Vue {
 
   getForm () {
     return this.form as WrappedFormUtils
+  }
+
+  onSubmit () {
+    console.log('thisValue======================')
+    console.log(this._value) // todo
+    console.log('======================')
   }
 }
 </script>

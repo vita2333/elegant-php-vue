@@ -1,3 +1,17 @@
+### 组件说明
+
+
+- form:接收form model
+
+- form-item:管理label,rules,对接validator-async,并实现了一些基础数据的默认校验
+
+- form-item-input:通过v-model绑定数据
+
+#### slot
+- header
+- footer
+
+
 # vue-lib-starter
 
 [文档地址](https://juejin.im/post/5d7860b0f265da03bc12a3d2)

@@ -54,7 +54,8 @@ export interface AntField extends AField {}
 export interface BaseField {
   label?: string
   type: string
-  rules?: string[] | string
+  rules?: string[] | string | object[]
+  required?: boolean
   hidden?: boolean
   disabled?: boolean
   desc?: string
