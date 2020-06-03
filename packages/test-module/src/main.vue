@@ -5,9 +5,6 @@
 </template>
 
 <script>
-console.log('======================')
-console.log('test - module')
-console.log('======================')
 export default {
   name: 'TestModule',
   mounted () {}

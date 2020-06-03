@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue, { RenderContext } from 'vue'
 
 export const isServer: boolean = Vue.prototype.$isServer
 
@@ -42,4 +42,20 @@ export function later (delay: number = 0): Promise<void> {
   return new Promise(resolve => {
     setTimeout(resolve, delay)
   })
+}
+
+// emit event
+export function emit (
+  context: RenderContext, eventName: string, ...args: any[]) {
+  const listeners = context.listeners[eventName]
+
+  if (listeners) {
+    if (Array.isArray(listeners)) {
+      listeners.forEach(listener => {
+        listener(...args)
+      })
+    } else {
+      listeners(...args)
+    }
+  }
 }

@@ -3,7 +3,7 @@
  */
 const glob = require('glob')
 
-let list =
+const list =
   {
     index: {
       input: 'src/index.js',
