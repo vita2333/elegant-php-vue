@@ -2,7 +2,7 @@
   <div id="app">
     <div class="links">
       <router-link to="/">
-        default demo
+        typical form
       </router-link>
       <router-link to="/">
         demo

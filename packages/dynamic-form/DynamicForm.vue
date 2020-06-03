@@ -4,6 +4,8 @@
     <a-form-model
       ref="form"
       :model="_value"
+      :rules="_rules"
+      v-bind="_parentProps"
     >
       <a-form-model-item
         v-for="(field, key) in fields"
@@ -101,6 +103,14 @@ export default class DynamicForm extends Vue {
 
   set _value (value: any) {
     this.$emit('input', value)
+  }
+
+  get _rules () {
+    return []
+  }
+
+  get _parentProps () {
+    return this.$attrs
   }
 
   get _inputTypeMap () {

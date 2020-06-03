@@ -3,6 +3,8 @@
     ref="dyForm"
     v-model="form"
     :fields="fields"
+    :label-col="labelCol"
+    :wrapper-col="wrapperCol"
   >
     <div slot="header">
       这里是Form Header
@@ -20,12 +22,13 @@ import { Component, Vue } from 'vue-property-decorator'
 import { Fields } from '@/types/common'
 import { FieldTypes } from '@/types/enum'
 
+Vue.use(DynamicForm)
 @Component({
-  components: {
-    DynamicForm
-  }
+  components: {}
 })
 export default class TestModuleDemo extends Vue {
+  labelCol = { span: 4 }
+  wrapperCol = { span: 14 }
   form: any = {
     name: '',
     region: '',
