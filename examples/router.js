@@ -16,6 +16,11 @@ export default new Router({
       path: '/inline',
       name: 'inline',
       component: () => import(/* webpackChunkName: "form" */ './views/InlineForm.vue')
+    },
+    {
+      path: '/validation',
+      name: 'validation',
+      component: () => import(/* webpackChunkName: "form" */ './views/ValidationForm.vue')
     }
   ]
 })

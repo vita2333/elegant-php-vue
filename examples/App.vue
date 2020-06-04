@@ -7,6 +7,9 @@
       <router-link to="/inline">
         Inline form
       </router-link>
+      <router-link to="/validation">
+        Validation form
+      </router-link>
     </div>
     <router-view />
   </div>
