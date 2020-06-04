@@ -49,8 +49,7 @@ export default class TestModuleDemo extends Vue {
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-      ],
-      desc: '活动名称详细说明'
+      ]
     },
     region: {
       label: '活动区域',
@@ -59,8 +58,7 @@ export default class TestModuleDemo extends Vue {
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-      ],
-      desc: '活动名称详细说明'
+      ]
     },
     date: {
       label: '活动时间',
@@ -69,8 +67,7 @@ export default class TestModuleDemo extends Vue {
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-      ],
-      desc: '活动名称详细说明'
+      ]
     },
     delivery: {
       label: '即时配送',
@@ -79,8 +76,7 @@ export default class TestModuleDemo extends Vue {
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-      ],
-      desc: '活动名称详细说明'
+      ]
     },
     type: {
       label: '活动性质',
@@ -90,31 +86,34 @@ export default class TestModuleDemo extends Vue {
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
       ],
-      desc: '活动名称详细说明',
       options: [
         { label: '美食/餐厅线上活动', value: 'online' },
-        { label: '地摊活动', value: 'offline' }
+        { label: '地摊活动', value: 'stall' },
+        { label: '线下主题活动', value: 'offline' },
+        { label: '单纯品牌曝光', value: 'showcase' }
       ]
     },
     resource: {
       label: '特殊资源',
-      type: FieldTypes.text,
+      type: FieldTypes.radio,
       required: true,
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
       ],
-      desc: '活动名称详细说明'
+      options: [
+        { label: '线上品牌商赞助', value: 'online' },
+        { label: '线下场地免费', value: 'offline' }
+      ]
     },
     desc: {
       label: '活动形式',
-      type: FieldTypes.text,
+      type: FieldTypes.textarea,
       required: true,
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-      ],
-      desc: '活动名称详细说明'
+      ]
     }
   }
 
