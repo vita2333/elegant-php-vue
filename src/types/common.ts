@@ -55,7 +55,7 @@ export interface BaseField {
   desc?: string
   unit?: string | number
   placeholder?: string
-  props?: Record<string, any>
+  attrs?: Record<string, any>
 }
 
 export interface KeyValue {

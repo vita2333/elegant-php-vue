@@ -55,7 +55,7 @@ export default class TypicalForm extends Vue {
       type: FieldTypes.picker,
       required: true,
       rules: [],
-      props: {
+      attrs: {
         options: [
           { label: '区域一', value: '1' },
           { label: '区域二', value: '2' }
@@ -68,7 +68,7 @@ export default class TypicalForm extends Vue {
       type: FieldTypes.datetime,
       required: true,
       rules: [],
-      props: {
+      attrs: {
         style: 'width:100%'
       }
     },
@@ -83,7 +83,7 @@ export default class TypicalForm extends Vue {
       type: FieldTypes.checkers,
       required: true,
       rules: [],
-      props: {
+      attrs: {
         options: [
           { label: '美食/餐厅线上活动', value: 'online' },
           { label: '地摊活动', value: 'stall' },
@@ -97,7 +97,7 @@ export default class TypicalForm extends Vue {
       type: FieldTypes.radio,
       required: true,
       rules: [],
-      props: {
+      attrs: {
         options: [
           { label: '线上品牌商赞助', value: 'online' },
           { label: '线下场地免费', value: 'offline' }

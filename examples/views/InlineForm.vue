@@ -9,9 +9,15 @@
     <div slot="header">
       <pre>{{ form }}</pre>
     </div>
-    <!--    <div slot="footer">-->
-    <!--      这里是Form Footer-->
-    <!--    </div>-->
+    <a-form-model-item slot="footer">
+      <a-button
+        :disabled="form.user === '' || form.password === ''"
+        html-type="submit"
+        type="primary"
+      >
+        登录
+      </a-button>
+    </a-form-model-item>
   </DynamicForm>
 </template>
 
@@ -29,19 +35,12 @@ Vue.use(DynamicForm)
 export default class InlineForm extends Vue {
   formProps = {
     layout: 'inline',
-    labelCol: { span: 4 },
-    wrapperCol: { span: 14 }
+    hideRequiredMark: true
   }
 
   form: any = {
-    name: '',
-    region: '',
-    date1: '',
-    date2: '',
-    delivery: false,
-    type: [],
-    resource: '',
-    desc: ''
+    username: '',
+    password: ''
   }
 
   fields: Fields = {
@@ -56,7 +55,7 @@ export default class InlineForm extends Vue {
       type: FieldTypes.password,
       required: true,
       rules: [],
-      props: {
+      attrs: {
         options: [
           { label: '区域一', value: '1' },
           { label: '区域二', value: '2' }
@@ -76,32 +75,6 @@ export default class InlineForm extends Vue {
     type: [{ type: 'array', required: true, message: '请至少选择一个活动性质', trigger: 'change' }],
     resource: [{ required: true, message: '请选择活动资源', trigger: 'change' }],
     desc: [{ required: true, message: '请填写活动形式', trigger: 'blur' }]
-  }
-
-  mounted () {
-    setTimeout(() => {
-      this.form = {
-        name: '测试活动',
-        region: '',
-        date1: '',
-        date2: '',
-        delivery: false,
-        type: [],
-        resource: '',
-        desc: ''
-      }
-    }, 2000)
-  }
-
-  submitForm () {
-    ;(this.$refs.dyForm as any).validate((valid) => {
-      if (valid) {
-        alert('submit!')
-      } else {
-        console.log('error submit!!')
-        return false
-      }
-    })
   }
 
   resetForm () {

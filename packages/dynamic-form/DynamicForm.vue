@@ -19,7 +19,7 @@
         <component
           :is="_inputTypeMap[field.type]"
           v-model="_value[key]"
-          v-bind="field.props"
+          v-bind="field.attrs"
         />
       </a-form-model-item>
       <slot name="footer">
@@ -45,7 +45,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
 // eslint-disable-next-line no-unused-vars
-import { AntField, Fields } from '@/types/common'
+import { Fields } from '@/types/common'
 // eslint-disable-next-line no-unused-vars
 import { InputTypeMap } from './utils'
 // eslint-disable-next-line no-unused-vars
@@ -69,32 +69,6 @@ export default class DynamicForm extends Vue {
     }
   })
   readonly value!: any
-
-  @Prop({
-    type: Object,
-
-    default () {
-      return {
-        // formRow: { gutter: 12 },
-        // formCol: { span: 6 },
-        formItem: {
-          labelCol: { span: 6 }, // 共24
-          wrapperCol: { span: 16 }
-        }
-      }
-    }
-  })
-  readonly layout!: Object
-
-  @Prop({
-    type: Boolean
-  })
-  readonly btnLoading!: boolean
-
-  @Prop({
-    type: Function
-  })
-  readonly onValuesChange: ((props: Vue, fields: AntField) => void) | undefined
 
   get _value () {
     return this.value
