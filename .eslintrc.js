@@ -9,6 +9,7 @@ module.exports = {
     'plugin:vue/recommended',
     '@vue/standard',
     '@vue/typescript',
+    'plugin:you-dont-need-lodash-underscore/compatible',
   ],
 
   rules: {

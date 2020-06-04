@@ -5,7 +5,7 @@
       ref="form"
       :model="_value"
       :rules="_rules"
-      v-bind="_parentProps"
+      v-bind="_formProps"
     >
       <a-form-model-item
         v-for="(field, key) in fields"
@@ -21,6 +21,7 @@
         <component
           :is="_inputTypeMap[field.type]"
           v-model="_value[key]"
+          v-bind="_getInputProps(field)"
         />
       </a-form-model-item>
       <slot name="footer">
@@ -46,7 +47,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
 // eslint-disable-next-line no-unused-vars
-import { AntField, Fields } from '@/types/common'
+import { AntField, Field, Fields } from '@/types/common'
 // eslint-disable-next-line no-unused-vars
 import { InputTypeMap } from './utils'
 // eslint-disable-next-line no-unused-vars
@@ -109,7 +110,7 @@ export default class DynamicForm extends Vue {
     return []
   }
 
-  get _parentProps () {
+  get _formProps () {
     return this.$attrs
   }
 
@@ -119,6 +120,22 @@ export default class DynamicForm extends Vue {
 
   get _form () {
     return this.$refs.form as FormModel
+  }
+
+  _getInputProps (field: Required<Field> & Record<string, any>) {
+    const {
+      label,
+      type,
+      rules,
+      required,
+      hidden,
+      disabled,
+      desc,
+      unit,
+      placeholder,
+      ...props
+    } = field
+    return props
   }
 
   public submit () {

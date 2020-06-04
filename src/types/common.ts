@@ -61,8 +61,6 @@ export interface BaseField {
   desc?: string
   unit?: string | number
   placeholder?: string
-  depends?: string[]
-  dependsFunc?: (values: string[]) => boolean | null
 }
 
 export interface KeyValue {

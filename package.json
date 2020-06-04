@@ -29,8 +29,6 @@
   ],
   "dependencies": {
     "ant-design-vue": "^1.6.1",
-    "core-js": "^3.6.5",
-    "glob": "^7.1.6",
     "lodash": "^4.17.15",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2"
@@ -39,6 +37,7 @@
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "@types/jest": "^23.1.4",
+    "@types/lodash": "^4.14.154",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.4.1",
@@ -60,7 +59,7 @@
     "babel-preset-typescript-vue": "^1.1.1",
     "chalk": "^2.4.2",
     "conventional-changelog-cli": "^2.0.23",
-    "core-js": "^2.6.5",
+    "core-js": "^3.6.5",
     "cross-env": "^5.2.1",
     "cssnano": "^4.1.10",
     "eslint": "^6.7.2",
@@ -69,6 +68,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.10.0",
     "highlight.js": "^9.15.10",
     "husky": "^3.0.5",
     "image-webpack-loader": "^6.0.0",

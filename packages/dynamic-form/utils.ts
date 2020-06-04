@@ -7,5 +7,6 @@ export const InputTypeMap = {
   [FieldTypes.textarea]: 'ATextarea',
   [FieldTypes.password]: 'AInputPassword',
   [FieldTypes.switch]: 'ASwitch',
-  [FieldTypes.date]: 'ADatePicker'
+  [FieldTypes.date]: 'ADatePicker',
+  [FieldTypes.checkers]: 'ACheckboxGroup'
 }

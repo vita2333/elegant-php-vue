@@ -8,6 +8,7 @@
   >
     <div slot="header">
       这里是Form Header
+      {{ form }}
     </div>
     <!--    <div slot="footer">-->
     <!--      这里是Form Footer-->
@@ -83,13 +84,17 @@ export default class TestModuleDemo extends Vue {
     },
     type: {
       label: '活动性质',
-      type: FieldTypes.text,
+      type: FieldTypes.checkers,
       required: true,
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
       ],
-      desc: '活动名称详细说明'
+      desc: '活动名称详细说明',
+      options: [
+        { label: '美食/餐厅线上活动', value: 'online' },
+        { label: '地摊活动', value: 'offline' }
+      ]
     },
     resource: {
       label: '特殊资源',
