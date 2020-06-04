@@ -29,6 +29,7 @@
   ],
   "dependencies": {
     "ant-design-vue": "^1.6.1",
+    "gifsicle": "^5.1.0",
     "lodash": "^4.17.15",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2"
@@ -107,7 +108,8 @@
     "vuepress": "^1.0.4",
     "vuex": "^3.1.1",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"
   },
   "bugs": {

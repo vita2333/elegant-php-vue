@@ -1,0 +1,933 @@
+{
+  "errors": [
+    "./packages/dynamic-form/index.js\nModule not found: Error: Can't resolve './DynamicForm' in '/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form'\nresolve './DynamicForm' in '/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form'\n  using description file: /Users/vita2333/Desktop/code/Epv/vitaUI/package.json (relative path: ./packages/dynamic-form)\n    Field 'browser' doesn't contain a valid alias configuration\n    using description file: /Users/vita2333/Desktop/code/Epv/vitaUI/package.json (relative path: ./packages/dynamic-form/DynamicForm)\n      no extension\n        Field 'browser' doesn't contain a valid alias configuration\n        /Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm doesn't exist\n      .wasm\n        Field 'browser' doesn't contain a valid alias configuration\n        /Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm.wasm doesn't exist\n      .mjs\n        Field 'browser' doesn't contain a valid alias configuration\n        /Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm.mjs doesn't exist\n      .js\n        Field 'browser' doesn't contain a valid alias configuration\n        /Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm.js doesn't exist\n      .json\n        Field 'browser' doesn't contain a valid alias configuration\n        /Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm.json doesn't exist\n      as directory\n        /Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm doesn't exist\n[/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm]\n[/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm.wasm]\n[/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm.mjs]\n[/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm.js]\n[/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/DynamicForm.json]\n @ ./packages/dynamic-form/index.js 1:0-32 3:0-4 4:16-20 4:27-31 7:15-19\n @ ./src/index.js",
+    "./packages/test-module/src/main.vue 1:0\nModule parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> <template>\n|   <div />\n| </template>\n @ ./packages/test-module/index.js 1:0-39 3:0-10 4:16-26 4:33-43 7:15-25\n @ ./src/index.js",
+    "chunk main [entry]\nmain.js\n/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60\nAssigning to rvalue (4:0)\n| \n| \n| !(function webpackMissingModule() { var e = new Error(\"Cannot find module './DynamicForm'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).install = (vue) => {\n|   vue.component(!(function webpackMissingModule() { var e = new Error(\"Cannot find module './DynamicForm'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).name, !(function webpackMissingModule() { var e = new Error(\"Cannot find module './DynamicForm'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))\n| }\nSyntaxError: /Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60\nAssigning to rvalue (4:0)\n| \n| \n| !(function webpackMissingModule() { var e = new Error(\"Cannot find module './DynamicForm'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).install = (vue) => {\n|   vue.component(!(function webpackMissingModule() { var e = new Error(\"Cannot find module './DynamicForm'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).name, !(function webpackMissingModule() { var e = new Error(\"Cannot find module './DynamicForm'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))\n| }\n    at Parser.pp$4.raise (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/node_modules/acorn/dist/acorn.js:2825:15)\n    at Parser.pp$2.toAssignable (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/node_modules/acorn/dist/acorn.js:1693:14)\n    at Parser.pp$3.parseMaybeAssign (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/node_modules/acorn/dist/acorn.js:1973:49)\n    at Parser.pp$3.parseExpression (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/node_modules/acorn/dist/acorn.js:1933:21)\n    at Parser.pp$1.parseStatement (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/node_modules/acorn/dist/acorn.js:877:47)\n    at Parser.pp$1.parseTopLevel (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/node_modules/acorn/dist/acorn.js:746:23)\n    at Parser.parse (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/node_modules/acorn/dist/acorn.js:553:17)\n    at Function.parse (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/node_modules/acorn/dist/acorn.js:576:37)\n    at Function.parse (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Parser.js:2409:22)\n    at ConcatenatedModule.source (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/optimize/ConcatenatedModule.js:716:19)\n    at ModuleTemplate.render (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/ModuleTemplate.js:54:32)\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Template.js:233:28\n    at Array.map (<anonymous>)\n    at Function.renderChunkModules (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Template.js:230:30)\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/JavascriptModulesPlugin.js:86:23\n    at SyncWaterfallHook.eval [as call] (eval at create (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)\n    at SyncWaterfallHook.lazyCompileHook (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/Hook.js:154:20)\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/MainTemplate.js:162:25\n    at SyncWaterfallHook.eval [as call] (eval at create (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)\n    at SyncWaterfallHook.lazyCompileHook (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/Hook.js:154:20)\n    at MainTemplate.render (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/MainTemplate.js:438:34)\n    at Object.render (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/JavascriptModulesPlugin.js:65:34)\n    at Compilation.createChunkAssets (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compilation.js:2172:29)\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compilation.js:1397:10\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at AsyncSeriesHook.lazyCompileHook (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/Hook.js:154:20)\n    at Compilation.seal (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compilation.js:1342:27)\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compiler.js:675:18\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compilation.js:1261:4\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:24:1)\n    at AsyncSeriesHook.lazyCompileHook (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/Hook.js:154:20)\n    at Compilation.finish (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compilation.js:1253:28)\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compiler.js:672:17\n    at eval (eval at create (/Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:11:1)\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compilation.js:1185:12\n    at /Users/vita2333/Desktop/code/Epv/vitaUI/node_modules/webpack/lib/Compilation.js:1097:9"
+  ],
+  "warnings": [
+    "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
+  ],
+  "version": "4.43.0",
+  "hash": "0eac096a3f71683a18f0",
+  "time": 94,
+  "builtAt": 1591240904558,
+  "publicPath": "",
+  "outputPath": "/Users/vita2333/Desktop/code/Epv/vitaUI/dist",
+  "assetsByChunkName": {},
+  "assets": [],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": false,
+      "initial": true,
+      "entry": true,
+      "size": 6321,
+      "names": [
+        "main"
+      ],
+      "files": [],
+      "hash": "0c0683bbe3f85beaef8a",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/test-module/src/main.vue",
+          "name": "./packages/test-module/src/main.vue",
+          "index": 3,
+          "index2": 1,
+          "size": 269,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/test-module/index.js",
+          "issuerId": null,
+          "issuerName": "./packages/test-module/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 25,
+                "building": 16
+              }
+            },
+            {
+              "id": null,
+              "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/test-module/index.js",
+              "name": "./packages/test-module/index.js",
+              "profile": {
+                "factory": 5,
+                "building": 2
+              }
+            }
+          ],
+          "profile": {
+            "factory": 1,
+            "building": 2
+          },
+          "failed": true,
+          "errors": 1,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+              "module": "./src/index.js + 2 modules",
+              "moduleName": "./src/index.js + 2 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./src/main.vue",
+              "loc": "1:0-39"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+              "module": "./src/index.js + 2 modules",
+              "moduleName": "./src/index.js + 2 modules",
+              "type": "harmony import specifier",
+              "userRequest": "./src/main.vue",
+              "loc": "3:0-10"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+              "module": "./src/index.js + 2 modules",
+              "moduleName": "./src/index.js + 2 modules",
+              "type": "harmony import specifier",
+              "userRequest": "./src/main.vue",
+              "loc": "4:16-26"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+              "module": "./src/index.js + 2 modules",
+              "moduleName": "./src/index.js + 2 modules",
+              "type": "harmony import specifier",
+              "userRequest": "./src/main.vue",
+              "loc": "4:33-43"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+              "module": "./src/index.js + 2 modules",
+              "moduleName": "./src/index.js + 2 modules",
+              "type": "harmony import specifier",
+              "userRequest": "./src/main.vue",
+              "loc": "7:15-25"
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source": "throw new Error(\"Module parse failed: Unexpected token (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> <template>\\n|   <div />\\n| </template>\");"
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/package.json",
+          "name": "./package.json",
+          "index": 4,
+          "index2": 3,
+          "size": 5278,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 25,
+                "building": 16
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 2
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+              "module": "./src/index.js + 2 modules",
+              "moduleName": "./src/index.js + 2 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../package.json",
+              "loc": "3:0-41"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+              "module": "./src/index.js + 2 modules",
+              "moduleName": "./src/index.js + 2 modules",
+              "type": "harmony import specifier",
+              "userRequest": "../package.json",
+              "loc": "20:17-24"
+            }
+          ],
+          "usedExports": [
+            "version"
+          ],
+          "providedExports": [
+            "name",
+            "version",
+            "private",
+            "description",
+            "author",
+            "scripts",
+            "main",
+            "files",
+            "dependencies",
+            "devDependencies",
+            "bugs",
+            "gitHooks",
+            "homepage",
+            "husky",
+            "keywords",
+            "license",
+            "lint-staged",
+            "repository",
+            "style",
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "{\n  \"name\": \"elegant-php-vue\",\n  \"version\": \"0.0.1\",\n  \"private\": false,\n  \"description\": \"elegant, easy php + vue template\",\n  \"author\": \"vita2333 <lp_vitadolce@163.com>\",\n  \"scripts\": {\n    \"serve\": \"cross-env NODE_ENV=development && vue-cli-service serve --copy\",\n    \"test:unit\": \"vue-cli-service test:unit\",\n    \"bootstrap\": \"yarn install\",\n    \"docs:build\": \"vuepress build docs\",\n    \"docs:dev\": \"vuepress dev docs\",\n    \"lib\": \"cross-env NODE_ENV=production rimraf ./lib && node ./build/rollup.build.js\",\n    \"lib:cli\": \"cross-env rimraf ./lib && node ./build/cli.build.js\",\n    \"lint:css\": \"cross-env  stylelint 'packages/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'examples/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'src/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'docs/.vuepress/**/*.{html,vue,css,less,scss,styl}' --fix\",\n    \"lint:prettier\": \"cross-env prettier --write \\\"src/**/*.js\\\" \\\"src/**/*.vue\\\" --loglevel warn\",\n    \"precommit\": \"lint-staged\",\n    \"pub:cli\": \"npm run uv && npm run lib:cli && npm publish\",\n    \"pub:rollup\": \"npm run uv && npm run lib && npm publish\",\n    \"uv\": \"cross-env node ./script/update.version.js\",\n    \"version\": \"conventional-changelog -p angular -i CHANGELOG.md -s\"\n  },\n  \"main\": \"lib/index.js\",\n  \"files\": [\n    \"lib\",\n    \"src\",\n    \"packages\",\n    \"types\"\n  ],\n  \"dependencies\": {\n    \"ant-design-vue\": \"^1.6.1\",\n    \"gifsicle\": \"^5.1.0\",\n    \"lodash\": \"^4.17.15\",\n    \"vue-class-component\": \"^7.2.3\",\n    \"vue-property-decorator\": \"^8.4.2\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^8.1.0\",\n    \"@commitlint/config-conventional\": \"^8.1.0\",\n    \"@types/jest\": \"^23.1.4\",\n    \"@types/lodash\": \"^4.14.154\",\n    \"@typescript-eslint/eslint-plugin\": \"^2.33.0\",\n    \"@typescript-eslint/parser\": \"^2.33.0\",\n    \"@vue/cli-plugin-babel\": \"~4.4.1\",\n    \"@vue/cli-plugin-eslint\": \"~4.4.1\",\n    \"@vue/cli-plugin-typescript\": \"~4.4.0\",\n    \"@vue/cli-plugin-unit-jest\": \"~4.4.1\",\n    \"@vue/cli-service\": \"~4.4.1\",\n    \"@vue/eslint-config-standard\": \"^5.1.2\",\n    \"@vue/eslint-config-typescript\": \"^5.0.2\",\n    \"@vue/test-utils\": \"1.0.0-beta.29\",\n    \"@vuepress/plugin-back-to-top\": \"^1.0.4\",\n    \"@vuepress/plugin-medium-zoom\": \"^1.0.4\",\n    \"autoprefixer\": \"^9.6.1\",\n    \"babel-core\": \"7.0.0-bridge.0\",\n    \"babel-eslint\": \"^10.0.3\",\n    \"babel-jest\": \"^23.6.0\",\n    \"babel-plugin-transform-remove-console\": \"^6.9.4\",\n    \"babel-preset-typescript\": \"^7.0.0-alpha.19\",\n    \"babel-preset-typescript-vue\": \"^1.1.1\",\n    \"chalk\": \"^2.4.2\",\n    \"conventional-changelog-cli\": \"^2.0.23\",\n    \"core-js\": \"^3.6.5\",\n    \"cross-env\": \"^5.2.1\",\n    \"cssnano\": \"^4.1.10\",\n    \"eslint\": \"^6.7.2\",\n    \"eslint-plugin-import\": \"^2.20.2\",\n    \"eslint-plugin-node\": \"^11.1.0\",\n    \"eslint-plugin-promise\": \"^4.2.1\",\n    \"eslint-plugin-standard\": \"^4.0.0\",\n    \"eslint-plugin-vue\": \"^6.2.2\",\n    \"eslint-plugin-you-dont-need-lodash-underscore\": \"^6.10.0\",\n    \"highlight.js\": \"^9.15.10\",\n    \"husky\": \"^3.0.5\",\n    \"image-webpack-loader\": \"^6.0.0\",\n    \"less\": \"^3.10.3\",\n    \"less-loader\": \"^5.0.0\",\n    \"lint-staged\": \"^9.2.5\",\n    \"mini-css-extract-plugin\": \"^0.8.0\",\n    \"postcss-cssnext\": \"^3.1.0\",\n    \"postcss-nested\": \"^4.1.2\",\n    \"postcss-simple-vars\": \"^5.0.2\",\n    \"prettier\": \"^1.18.2\",\n    \"rimraf\": \"^3.0.0\",\n    \"rollup\": \"^1.21.0\",\n    \"rollup-plugin-alias\": \"^2.0.0\",\n    \"rollup-plugin-babel\": \"^4.3.3\",\n    \"rollup-plugin-commonjs\": \"^10.1.0\",\n    \"rollup-plugin-filesize\": \"^6.2.0\",\n    \"rollup-plugin-img\": \"^1.1.0\",\n    \"rollup-plugin-json\": \"^4.0.0\",\n    \"rollup-plugin-node-resolve\": \"^5.2.0\",\n    \"rollup-plugin-postcss\": \"^2.0.3\",\n    \"rollup-plugin-replace\": \"^2.2.0\",\n    \"rollup-plugin-terser\": \"^5.1.1\",\n    \"rollup-plugin-vue\": \"^5.0.1\",\n    \"runjs\": \"^4.4.2\",\n    \"stylelint\": \"^10.1.0\",\n    \"stylelint-config-standard\": \"^18.3.0\",\n    \"stylelint-order\": \"^3.1.0\",\n    \"stylelint-webpack-plugin\": \"^0.10.5\",\n    \"ts-jest\": \"^23.0.0\",\n    \"typescript\": \"~3.9.3\",\n    \"vue\": \"^2.6.10\",\n    \"vue-highlight.js\": \"^2.2.0\",\n    \"vue-router\": \"^3.1.3\",\n    \"vue-template-compiler\": \"^2.6.10\",\n    \"vuepress\": \"^1.0.4\",\n    \"vuex\": \"^3.1.1\",\n    \"webpack\": \"^4.39.3\",\n    \"webpack-bundle-analyzer\": \"^3.8.0\",\n    \"webpack-cli\": \"^3.3.11\",\n    \"webpack-merge\": \"^4.2.2\"\n  },\n  \"bugs\": {\n    \"url\": \"x\"\n  },\n  \"gitHooks\": {\n    \"pre-commit\": \"lint-staged\"\n  },\n  \"homepage\": \"x\",\n  \"husky\": {\n    \"hooks\": {\n      \"pre-commit\": \"lint-staged\",\n      \"commit-msg\": \"commitlint -E HUSKY_GIT_PARAMS\"\n    }\n  },\n  \"keywords\": [\n    \"vue\"\n  ],\n  \"license\": \"MIT\",\n  \"lint-staged\": {\n    \"src/**/*.{js}\": [\n      \"prettier --write\",\n      \"eslint --fix\",\n      \"git add\"\n    ],\n    \"packages/**/*.{js,jsx,vue}\": [\n      \"prettier --write\",\n      \"eslint --fix\",\n      \"git add\"\n    ],\n    \"pageages/**/*.{html,vue,css,less,scss,styl}\": [\n      \"stylelint --fix\",\n      \"git add\"\n    ],\n    \"examples/**/*.{js,jsx,vue}\": [\n      \"prettier --write\",\n      \"eslint --fix\",\n      \"git add\"\n    ],\n    \"examples/**/*.{html,vue,css,less,scss,styl}\": [\n      \"stylelint --fix\",\n      \"git add\"\n    ],\n    \"docs/**/*.{js,jsx,vue}\": [\n      \"prettier --write\",\n      \"eslint --fix\",\n      \"git add\"\n    ]\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"x\"\n  },\n  \"style\": \"lib/theme/index.css\"\n}\n"
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+          "name": "./src/index.js + 2 modules",
+          "index": 0,
+          "index2": 4,
+          "size": 774,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Cannot concat with ./package.json (<- Module is not an ECMAScript module)",
+            "ModuleConcatenation bailout: Cannot concat with ./packages/test-module/src/main.vue (<- Module is not an ECMAScript module)"
+          ],
+          "depth": 0,
+          "modules": [
+            {
+              "id": null,
+              "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "name": "./src/index.js",
+              "index": 0,
+              "index2": 4,
+              "size": 501,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 25,
+                "building": 16
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "./src",
+                  "loc": "main"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is an entry point"
+              ],
+              "depth": 0,
+              "source": "import FileHandle from '../packages/dynamic-form/index'\nimport TestModule from '../packages/test-module/index'\nimport { version } from '../package.json'\n\nconst components = [FileHandle, TestModule]\n\nconst install = function (Vue) {\n  if (install.installed) {\n    return\n  }\n  components.forEach((component) => {\n    Vue.component(component.name, component)\n  })\n}\n\nif (typeof window !== 'undefined' && window.Vue) {\n  install(window.Vue)\n}\n\nexport default { version, install, FileHandle, TestModule }\n"
+            },
+            {
+              "id": null,
+              "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/index.js",
+              "name": "./packages/dynamic-form/index.js",
+              "index": 1,
+              "index2": 0,
+              "size": 116,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "issuerId": null,
+              "issuerName": "./src/index.js",
+              "issuerPath": [
+                {
+                  "id": null,
+                  "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+                  "name": "./src/index.js",
+                  "profile": {
+                    "factory": 25,
+                    "building": 16
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 5,
+                "building": 2
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "../packages/dynamic-form/index",
+                  "loc": "1:0-55"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../packages/dynamic-form/index",
+                  "loc": "5:20-30"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../packages/dynamic-form/index",
+                  "loc": "20:35-45"
+                }
+              ],
+              "usedExports": [
+                "default"
+              ],
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 1,
+              "source": "import comp from './DynamicForm'\n\ncomp.install = (vue) => {\n  vue.component(comp.name, comp)\n}\n\nexport default comp\n"
+            },
+            {
+              "id": null,
+              "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/test-module/index.js",
+              "name": "./packages/test-module/index.js",
+              "index": 2,
+              "index2": 2,
+              "size": 147,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "issuerId": null,
+              "issuerName": "./src/index.js",
+              "issuerPath": [
+                {
+                  "id": null,
+                  "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+                  "name": "./src/index.js",
+                  "profile": {
+                    "factory": 25,
+                    "building": 16
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 5,
+                "building": 2
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "../packages/test-module/index",
+                  "loc": "2:0-54"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../packages/test-module/index",
+                  "loc": "5:32-42"
+                },
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+                  "module": "./src/index.js",
+                  "moduleName": "./src/index.js",
+                  "type": "harmony import specifier",
+                  "userRequest": "../packages/test-module/index",
+                  "loc": "20:47-57"
+                }
+              ],
+              "usedExports": [
+                "default"
+              ],
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 1,
+              "source": "import TestModule from './src/main.vue'\n\nTestModule.install = (vue) => {\n  vue.component(TestModule.name, TestModule)\n}\n\nexport default TestModule\n"
+            }
+          ],
+          "filteredModules": 0
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/test-module/src/main.vue",
+      "name": "./packages/test-module/src/main.vue",
+      "index": 3,
+      "index2": 1,
+      "size": 269,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/test-module/index.js",
+      "issuerId": null,
+      "issuerName": "./packages/test-module/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+          "name": "./src/index.js",
+          "profile": {
+            "factory": 25,
+            "building": 16
+          }
+        },
+        {
+          "id": null,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/test-module/index.js",
+          "name": "./packages/test-module/index.js",
+          "profile": {
+            "factory": 5,
+            "building": 2
+          }
+        }
+      ],
+      "profile": {
+        "factory": 1,
+        "building": 2
+      },
+      "failed": true,
+      "errors": 1,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./src/main.vue",
+          "loc": "1:0-39"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony import specifier",
+          "userRequest": "./src/main.vue",
+          "loc": "3:0-10"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony import specifier",
+          "userRequest": "./src/main.vue",
+          "loc": "4:16-26"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony import specifier",
+          "userRequest": "./src/main.vue",
+          "loc": "4:33-43"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony import specifier",
+          "userRequest": "./src/main.vue",
+          "loc": "7:15-25"
+        }
+      ],
+      "usedExports": [
+        "default"
+      ],
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source": "throw new Error(\"Module parse failed: Unexpected token (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> <template>\\n|   <div />\\n| </template>\");"
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/package.json",
+      "name": "./package.json",
+      "index": 4,
+      "index2": 3,
+      "size": 5278,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+      "issuerId": null,
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+          "name": "./src/index.js",
+          "profile": {
+            "factory": 25,
+            "building": 16
+          }
+        }
+      ],
+      "profile": {
+        "factory": 5,
+        "building": 2
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../package.json",
+          "loc": "3:0-41"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+          "module": "./src/index.js + 2 modules",
+          "moduleName": "./src/index.js + 2 modules",
+          "type": "harmony import specifier",
+          "userRequest": "../package.json",
+          "loc": "20:17-24"
+        }
+      ],
+      "usedExports": [
+        "version"
+      ],
+      "providedExports": [
+        "name",
+        "version",
+        "private",
+        "description",
+        "author",
+        "scripts",
+        "main",
+        "files",
+        "dependencies",
+        "devDependencies",
+        "bugs",
+        "gitHooks",
+        "homepage",
+        "husky",
+        "keywords",
+        "license",
+        "lint-staged",
+        "repository",
+        "style",
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "{\n  \"name\": \"elegant-php-vue\",\n  \"version\": \"0.0.1\",\n  \"private\": false,\n  \"description\": \"elegant, easy php + vue template\",\n  \"author\": \"vita2333 <lp_vitadolce@163.com>\",\n  \"scripts\": {\n    \"serve\": \"cross-env NODE_ENV=development && vue-cli-service serve --copy\",\n    \"test:unit\": \"vue-cli-service test:unit\",\n    \"bootstrap\": \"yarn install\",\n    \"docs:build\": \"vuepress build docs\",\n    \"docs:dev\": \"vuepress dev docs\",\n    \"lib\": \"cross-env NODE_ENV=production rimraf ./lib && node ./build/rollup.build.js\",\n    \"lib:cli\": \"cross-env rimraf ./lib && node ./build/cli.build.js\",\n    \"lint:css\": \"cross-env  stylelint 'packages/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'examples/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'src/**/*.{html,vue,css,less,scss,styl}' --fix && stylelint 'docs/.vuepress/**/*.{html,vue,css,less,scss,styl}' --fix\",\n    \"lint:prettier\": \"cross-env prettier --write \\\"src/**/*.js\\\" \\\"src/**/*.vue\\\" --loglevel warn\",\n    \"precommit\": \"lint-staged\",\n    \"pub:cli\": \"npm run uv && npm run lib:cli && npm publish\",\n    \"pub:rollup\": \"npm run uv && npm run lib && npm publish\",\n    \"uv\": \"cross-env node ./script/update.version.js\",\n    \"version\": \"conventional-changelog -p angular -i CHANGELOG.md -s\"\n  },\n  \"main\": \"lib/index.js\",\n  \"files\": [\n    \"lib\",\n    \"src\",\n    \"packages\",\n    \"types\"\n  ],\n  \"dependencies\": {\n    \"ant-design-vue\": \"^1.6.1\",\n    \"gifsicle\": \"^5.1.0\",\n    \"lodash\": \"^4.17.15\",\n    \"vue-class-component\": \"^7.2.3\",\n    \"vue-property-decorator\": \"^8.4.2\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^8.1.0\",\n    \"@commitlint/config-conventional\": \"^8.1.0\",\n    \"@types/jest\": \"^23.1.4\",\n    \"@types/lodash\": \"^4.14.154\",\n    \"@typescript-eslint/eslint-plugin\": \"^2.33.0\",\n    \"@typescript-eslint/parser\": \"^2.33.0\",\n    \"@vue/cli-plugin-babel\": \"~4.4.1\",\n    \"@vue/cli-plugin-eslint\": \"~4.4.1\",\n    \"@vue/cli-plugin-typescript\": \"~4.4.0\",\n    \"@vue/cli-plugin-unit-jest\": \"~4.4.1\",\n    \"@vue/cli-service\": \"~4.4.1\",\n    \"@vue/eslint-config-standard\": \"^5.1.2\",\n    \"@vue/eslint-config-typescript\": \"^5.0.2\",\n    \"@vue/test-utils\": \"1.0.0-beta.29\",\n    \"@vuepress/plugin-back-to-top\": \"^1.0.4\",\n    \"@vuepress/plugin-medium-zoom\": \"^1.0.4\",\n    \"autoprefixer\": \"^9.6.1\",\n    \"babel-core\": \"7.0.0-bridge.0\",\n    \"babel-eslint\": \"^10.0.3\",\n    \"babel-jest\": \"^23.6.0\",\n    \"babel-plugin-transform-remove-console\": \"^6.9.4\",\n    \"babel-preset-typescript\": \"^7.0.0-alpha.19\",\n    \"babel-preset-typescript-vue\": \"^1.1.1\",\n    \"chalk\": \"^2.4.2\",\n    \"conventional-changelog-cli\": \"^2.0.23\",\n    \"core-js\": \"^3.6.5\",\n    \"cross-env\": \"^5.2.1\",\n    \"cssnano\": \"^4.1.10\",\n    \"eslint\": \"^6.7.2\",\n    \"eslint-plugin-import\": \"^2.20.2\",\n    \"eslint-plugin-node\": \"^11.1.0\",\n    \"eslint-plugin-promise\": \"^4.2.1\",\n    \"eslint-plugin-standard\": \"^4.0.0\",\n    \"eslint-plugin-vue\": \"^6.2.2\",\n    \"eslint-plugin-you-dont-need-lodash-underscore\": \"^6.10.0\",\n    \"highlight.js\": \"^9.15.10\",\n    \"husky\": \"^3.0.5\",\n    \"image-webpack-loader\": \"^6.0.0\",\n    \"less\": \"^3.10.3\",\n    \"less-loader\": \"^5.0.0\",\n    \"lint-staged\": \"^9.2.5\",\n    \"mini-css-extract-plugin\": \"^0.8.0\",\n    \"postcss-cssnext\": \"^3.1.0\",\n    \"postcss-nested\": \"^4.1.2\",\n    \"postcss-simple-vars\": \"^5.0.2\",\n    \"prettier\": \"^1.18.2\",\n    \"rimraf\": \"^3.0.0\",\n    \"rollup\": \"^1.21.0\",\n    \"rollup-plugin-alias\": \"^2.0.0\",\n    \"rollup-plugin-babel\": \"^4.3.3\",\n    \"rollup-plugin-commonjs\": \"^10.1.0\",\n    \"rollup-plugin-filesize\": \"^6.2.0\",\n    \"rollup-plugin-img\": \"^1.1.0\",\n    \"rollup-plugin-json\": \"^4.0.0\",\n    \"rollup-plugin-node-resolve\": \"^5.2.0\",\n    \"rollup-plugin-postcss\": \"^2.0.3\",\n    \"rollup-plugin-replace\": \"^2.2.0\",\n    \"rollup-plugin-terser\": \"^5.1.1\",\n    \"rollup-plugin-vue\": \"^5.0.1\",\n    \"runjs\": \"^4.4.2\",\n    \"stylelint\": \"^10.1.0\",\n    \"stylelint-config-standard\": \"^18.3.0\",\n    \"stylelint-order\": \"^3.1.0\",\n    \"stylelint-webpack-plugin\": \"^0.10.5\",\n    \"ts-jest\": \"^23.0.0\",\n    \"typescript\": \"~3.9.3\",\n    \"vue\": \"^2.6.10\",\n    \"vue-highlight.js\": \"^2.2.0\",\n    \"vue-router\": \"^3.1.3\",\n    \"vue-template-compiler\": \"^2.6.10\",\n    \"vuepress\": \"^1.0.4\",\n    \"vuex\": \"^3.1.1\",\n    \"webpack\": \"^4.39.3\",\n    \"webpack-bundle-analyzer\": \"^3.8.0\",\n    \"webpack-cli\": \"^3.3.11\",\n    \"webpack-merge\": \"^4.2.2\"\n  },\n  \"bugs\": {\n    \"url\": \"x\"\n  },\n  \"gitHooks\": {\n    \"pre-commit\": \"lint-staged\"\n  },\n  \"homepage\": \"x\",\n  \"husky\": {\n    \"hooks\": {\n      \"pre-commit\": \"lint-staged\",\n      \"commit-msg\": \"commitlint -E HUSKY_GIT_PARAMS\"\n    }\n  },\n  \"keywords\": [\n    \"vue\"\n  ],\n  \"license\": \"MIT\",\n  \"lint-staged\": {\n    \"src/**/*.{js}\": [\n      \"prettier --write\",\n      \"eslint --fix\",\n      \"git add\"\n    ],\n    \"packages/**/*.{js,jsx,vue}\": [\n      \"prettier --write\",\n      \"eslint --fix\",\n      \"git add\"\n    ],\n    \"pageages/**/*.{html,vue,css,less,scss,styl}\": [\n      \"stylelint --fix\",\n      \"git add\"\n    ],\n    \"examples/**/*.{js,jsx,vue}\": [\n      \"prettier --write\",\n      \"eslint --fix\",\n      \"git add\"\n    ],\n    \"examples/**/*.{html,vue,css,less,scss,styl}\": [\n      \"stylelint --fix\",\n      \"git add\"\n    ],\n    \"docs/**/*.{js,jsx,vue}\": [\n      \"prettier --write\",\n      \"eslint --fix\",\n      \"git add\"\n    ]\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"x\"\n  },\n  \"style\": \"lib/theme/index.css\"\n}\n"
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js 839c7fefc72fc563beec3c85f72ebb60",
+      "name": "./src/index.js + 2 modules",
+      "index": 0,
+      "index2": 4,
+      "size": 774,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Cannot concat with ./package.json (<- Module is not an ECMAScript module)",
+        "ModuleConcatenation bailout: Cannot concat with ./packages/test-module/src/main.vue (<- Module is not an ECMAScript module)"
+      ],
+      "depth": 0,
+      "modules": [
+        {
+          "id": null,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+          "name": "./src/index.js",
+          "index": 0,
+          "index2": 4,
+          "size": 501,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 25,
+            "building": 16
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "import FileHandle from '../packages/dynamic-form/index'\nimport TestModule from '../packages/test-module/index'\nimport { version } from '../package.json'\n\nconst components = [FileHandle, TestModule]\n\nconst install = function (Vue) {\n  if (install.installed) {\n    return\n  }\n  components.forEach((component) => {\n    Vue.component(component.name, component)\n  })\n}\n\nif (typeof window !== 'undefined' && window.Vue) {\n  install(window.Vue)\n}\n\nexport default { version, install, FileHandle, TestModule }\n"
+        },
+        {
+          "id": null,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/dynamic-form/index.js",
+          "name": "./packages/dynamic-form/index.js",
+          "index": 1,
+          "index2": 0,
+          "size": 116,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 25,
+                "building": 16
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 2
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../packages/dynamic-form/index",
+              "loc": "1:0-55"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "../packages/dynamic-form/index",
+              "loc": "5:20-30"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "../packages/dynamic-form/index",
+              "loc": "20:35-45"
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import comp from './DynamicForm'\n\ncomp.install = (vue) => {\n  vue.component(comp.name, comp)\n}\n\nexport default comp\n"
+        },
+        {
+          "id": null,
+          "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/packages/test-module/index.js",
+          "name": "./packages/test-module/index.js",
+          "index": 2,
+          "index2": 2,
+          "size": 147,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+          "issuerId": null,
+          "issuerName": "./src/index.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "name": "./src/index.js",
+              "profile": {
+                "factory": 25,
+                "building": 16
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 2
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../packages/test-module/index",
+              "loc": "2:0-54"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "../packages/test-module/index",
+              "loc": "5:32-42"
+            },
+            {
+              "moduleId": null,
+              "moduleIdentifier": "/Users/vita2333/Desktop/code/Epv/vitaUI/src/index.js",
+              "module": "./src/index.js",
+              "moduleName": "./src/index.js",
+              "type": "harmony import specifier",
+              "userRequest": "../packages/test-module/index",
+              "loc": "20:47-57"
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import TestModule from './src/main.vue'\n\nTestModule.install = (vue) => {\n  vue.component(TestModule.name, TestModule)\n}\n\nexport default TestModule\n"
+        }
+      ],
+      "filteredModules": 0
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}

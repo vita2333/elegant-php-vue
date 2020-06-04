@@ -2,6 +2,8 @@ const utils = require('./build/utils.js')
 const { join } = require('path')
 const aliasConfig = require('./config/alias')
 const { externalMap } = require('./config/index')
+const BundleAnalyzerPlugin = require(
+  'webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const setAlias = (config) => {
   const { alias } = aliasConfig
@@ -65,6 +67,9 @@ module.exports = {
   configureWebpack: (config) => {
     if (utils.isProduct) {
       config.externals = externalMap
+      // todo add amalyzer
+      // config.plugins.push(new BundleAnalyzerPlugin({ analyzerPort: 'auto' })
+      // )
     }
   },
   devServer: {

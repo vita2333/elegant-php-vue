@@ -9,9 +9,10 @@ const fs = require('fs')
 const cssFiles = []
 
 function build({ input, output } = {}, index, arr) {
+
   chalkConsole.building(index + 1, arr.length)
   run(
-    `vue-cli-service build --target lib --no-clean  --name ${output} --dest ${getAssetsPath()} ${input}`
+    `vue-cli-service build  --target lib --no-clean  --name ${output} --dest ${getAssetsPath()} ${input} npm_config_report=true`,
   )
   cssFiles.push(`${output}.css`)
 }
@@ -23,15 +24,16 @@ Object.keys(libList).forEach((moduleName) => {
   pkg.push({ input, output })
 })
 pkg = pkg.concat(addons)
+
 pkg.forEach(build)
 // 删除多余文件
-rimraf(getAssetsPath('./demo.html'), function() {})
+rimraf(getAssetsPath('./demo.html'), function () {})
 // 创建样式文件夹
 fs.mkdirSync(getAssetsPath(styleOutputPath))
 // 拷贝css文件到单独目录
 cssFiles.forEach((cssFile) => {
   fsExistsSync(getAssetsPath(cssFile)) &&
-    move(getAssetsPath(cssFile), getAssetsPath(styleOutputPath + '/' + cssFile))
+  move(getAssetsPath(cssFile), getAssetsPath(styleOutputPath + '/' + cssFile))
 })
 // 重命名common文件
 fileDisplay(getAssetsPath(), (file) => {

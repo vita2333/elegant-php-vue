@@ -18,8 +18,9 @@
 
 
 ## 安装依赖
-```
+```shell script
 yarn install
+brew install libtool automake autoconf nasm   # 为gifsicle搭建环境
 ```
 
 ### 运行example
