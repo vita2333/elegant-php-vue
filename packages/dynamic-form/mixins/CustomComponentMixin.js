@@ -12,9 +12,6 @@ export default {
       set (value) {
         this.$emit('input', value)
       }
-    },
-    _props () {
-      return this.$attrs
     }
   }
 }

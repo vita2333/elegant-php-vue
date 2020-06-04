@@ -12,11 +12,9 @@
         v-show="!field.hidden"
         :key="key"
         :extra="field.desc"
-        :has-feedback="true"
         :label="field.label"
         :prop="key"
         :required="field.required"
-        v-bind="layout"
       >
         <component
           :is="_inputTypeMap[field.type]"
@@ -107,7 +105,7 @@ export default class DynamicForm extends Vue {
   }
 
   get _rules () {
-    return []
+    return {}
   }
 
   get _formProps () {
@@ -125,7 +123,7 @@ export default class DynamicForm extends Vue {
   public submit () {
     this._form.validate((valid) => {
       if (valid) {
-        alert('submit!')
+        this.$emit('submit')
       } else {
         console.log('error submit!!')
         return false

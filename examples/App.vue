@@ -2,10 +2,10 @@
   <div id="app">
     <div class="links">
       <router-link to="/">
-        typical form
+        Typical form
       </router-link>
-      <router-link to="/">
-        demo
+      <router-link to="/inline">
+        Inline form
       </router-link>
     </div>
     <router-view />

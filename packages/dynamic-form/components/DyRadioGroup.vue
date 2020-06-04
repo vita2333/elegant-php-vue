@@ -1,7 +1,10 @@
 <template>
-  <a-radio-group v-model="_value">
+  <a-radio-group
+    v-model="_value"
+    v-bind="$attrs"
+  >
     <a-radio
-      v-for="option in _props.options"
+      v-for="option in $attrs.options"
       :key="option.value"
       :value="option.value"
     >
