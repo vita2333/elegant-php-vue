@@ -161,7 +161,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "x"
+    "url": "https://github.com/vita2333/elegant-php-vue.git"
   },
   "style": "lib/theme/index.css"
 }
