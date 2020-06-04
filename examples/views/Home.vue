@@ -3,8 +3,7 @@
     ref="dyForm"
     v-model="form"
     :fields="fields"
-    :label-col="labelCol"
-    :wrapper-col="wrapperCol"
+    v-bind="formProps"
   >
     <div slot="header">
       这里是Form Header
@@ -28,8 +27,11 @@ Vue.use(DynamicForm)
   components: {}
 })
 export default class TestModuleDemo extends Vue {
-  labelCol = { span: 4 }
-  wrapperCol = { span: 14 }
+  formProps = {
+    labelCol: { span: 4 },
+    wrapperCol: { span: 14 }
+  }
+
   form: any = {
     name: '',
     region: '',
@@ -53,12 +55,18 @@ export default class TestModuleDemo extends Vue {
     },
     region: {
       label: '活动区域',
-      type: FieldTypes.text,
+      type: FieldTypes.picker,
       required: true,
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-      ]
+      ],
+      props: {
+        options: [
+          { label: '区域一', value: '1' },
+          { label: '区域二', value: '2' }
+        ]
+      }
     },
     date: {
       label: '活动时间',
@@ -67,7 +75,10 @@ export default class TestModuleDemo extends Vue {
       rules: [
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
-      ]
+      ],
+      props: {
+        style: 'width:100%'
+      }
     },
     delivery: {
       label: '即时配送',
@@ -86,12 +97,14 @@ export default class TestModuleDemo extends Vue {
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
       ],
-      options: [
-        { label: '美食/餐厅线上活动', value: 'online' },
-        { label: '地摊活动', value: 'stall' },
-        { label: '线下主题活动', value: 'offline' },
-        { label: '单纯品牌曝光', value: 'showcase' }
-      ]
+      props: {
+        options: [
+          { label: '美食/餐厅线上活动', value: 'online' },
+          { label: '地摊活动', value: 'stall' },
+          { label: '线下主题活动', value: 'offline' },
+          { label: '单纯品牌曝光', value: 'showcase' }
+        ]
+      }
     },
     resource: {
       label: '特殊资源',
@@ -101,10 +114,12 @@ export default class TestModuleDemo extends Vue {
         { required: true, message: '请输入活动名称', trigger: 'blur' },
         { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
       ],
-      options: [
-        { label: '线上品牌商赞助', value: 'online' },
-        { label: '线下场地免费', value: 'offline' }
-      ]
+      props: {
+        options: [
+          { label: '线上品牌商赞助', value: 'online' },
+          { label: '线下场地免费', value: 'offline' }
+        ]
+      }
     },
     desc: {
       label: '活动形式',

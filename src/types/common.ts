@@ -1,5 +1,4 @@
 import { Field as AField } from 'ant-design-vue/types/form/form'
-import { TreeData } from 'ant-design-vue/types/tree-select'
 
 export interface List {
   items: any[]
@@ -34,11 +33,6 @@ export interface Column {
 
 export type Field =
   | BaseField
-  | CodeField
-  | SwitchField
-  | ImgField
-  | PickerField
-  | TreeField
 
 export interface Fields {
   [name: string]: Field
@@ -61,32 +55,11 @@ export interface BaseField {
   desc?: string
   unit?: string | number
   placeholder?: string
+  props?: Record<string, any>
 }
 
 export interface KeyValue {
   [x: string]: any
-}
-
-export interface CodeField extends BaseField {
-  mobileField: string
-  sendFunc: (mobile: string) => Promise<any>
-}
-
-export interface SwitchField extends BaseField {
-  activeValue?: any
-  inactiveValue?: any
-}
-
-export interface ImgField extends BaseField {
-  maxPic: number
-}
-
-export interface PickerField extends BaseField {
-  options: Option[] | KeyValue | Promise<any>
-}
-
-export interface TreeField extends BaseField {
-  treeData: (TreeData | { title: string })[]
 }
 
 export interface Option {
