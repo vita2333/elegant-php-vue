@@ -8,6 +8,7 @@ module.exports = {
   clearConsole: config.clearConsole,
   // 打包忽略
   externalMap: {
-    vue: 'Vue'
+    vue: 'Vue',
+    'ant-design-vue': 'ant-design-vue',
   }
 }

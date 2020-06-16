@@ -4,7 +4,6 @@ const aliasConfig = require('./config/alias')
 const { externalMap } = require('./config/index')
 const BundleAnalyzerPlugin = require(
   'webpack-bundle-analyzer').BundleAnalyzerPlugin
-
 const setAlias = (config) => {
   const { alias } = aliasConfig
   Object.keys(alias).forEach((key) => {
@@ -32,10 +31,7 @@ module.exports = {
   },
   // 扩展 webpack 配置，使 packages 加入编译
   chainWebpack: (config) => {
-    config.module
-      .rule('js')
-      .include.add(join(process.cwd(), 'src'))
-      .end()
+    config.module.rule('js').include.add(join(process.cwd(), 'src')).end()
     // 设置别名
     setAlias(config)
     // 关闭利用空余带宽加载文件 提升首页速度
@@ -43,19 +39,19 @@ module.exports = {
     config.plugins.delete('prefetch')
     // 配置别名
     config.extensions = aliasConfig.resolve
-    config.module
-      .rule('js')
-      .include.add(/packages/)
-      .end()
-      .use('babel')
-      .loader('babel-loader')
-      .tap((options) => {
+    config.module.rule('js').
+      include.
+      add(/packages/).
+      end().
+      use('babel').
+      loader('babel-loader').
+      tap((options) => {
         return options
       })
+
     config.when(utils.isProduct, (config) => {
       // 开启图片压缩
-      config.module
-        .rule('images')
+      config.module.rule('images')
         .use('image-webpack-loader')
         .loader('image-webpack-loader')
         .options({
@@ -68,8 +64,8 @@ module.exports = {
     if (utils.isProduct) {
       config.externals = externalMap
       // todo add amalyzer
-      // config.plugins.push(new BundleAnalyzerPlugin({ analyzerPort: 'auto' })
-      // )
+      config.plugins.push(new BundleAnalyzerPlugin({ analyzerPort: 'auto' }),
+      )
     }
   },
   devServer: {

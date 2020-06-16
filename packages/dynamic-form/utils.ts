@@ -11,6 +11,6 @@ export const InputTypeMap = {
   [FieldTypes.datetime]: 'ADatePicker',
   [FieldTypes.checkers]: 'ACheckboxGroup',
   // custom component
-  [FieldTypes.radio]: () => import(/* webpackChunkName: 'form-basic' */ './components/DyRadioGroup.vue'),
-  [FieldTypes.picker]: () => import(/* webpackChunkName: 'form-basic' */ './components/DySelect.vue')
+  [FieldTypes.radio]: () => import(/* webpackChunkName: 'dyform-basic' */ './components/DyRadioGroup.vue'),
+  [FieldTypes.picker]: () => import(/* webpackChunkName: 'dyform-basic' */ './components/DySelect.vue')
 }

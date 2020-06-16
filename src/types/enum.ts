@@ -20,27 +20,3 @@ export const enum FieldTypes {
     editor = 'editor',
     group = 'group',
 }
-
-export const enum ViewTypes {
-    text = 'text',
-    number = 'number',
-    tag = 'tag',
-    tags = 'tags',
-    img = 'img',
-    video = 'video',
-    switch = 'switch',
-    filter = 'filter',
-    html = 'html',
-    price = 'price',
-}
-
-export const enum Rules {
-    required = 'required',
-    number = 'number',
-    mobile = 'mobile',
-    same = 'same',
-}
-
-export const enum ResourceKey {
-    goods = 'goods',
-}

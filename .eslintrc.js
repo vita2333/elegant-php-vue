@@ -1,3 +1,4 @@
+const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
   root: true,
 
@@ -5,21 +6,20 @@ module.exports = {
     node: true,
   },
 
-  extends: [
+  extends: isProd ? [] : [
     'plugin:vue/recommended',
     '@vue/standard',
     '@vue/typescript',
-    'plugin:you-dont-need-lodash-underscore/compatible',
   ],
 
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': isProd ? 'error' : 'off',
+    'no-debugger': isProd ? 'error' : 'off',
     'vue/require-default-prop': 'off',
   },
 
   parserOptions: {
-    parser: '@typescript-eslint/parser',
+    parser: isProd ? '' : '@typescript-eslint/parser',
   },
 
   overrides: [

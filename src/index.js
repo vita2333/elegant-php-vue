@@ -1,8 +1,7 @@
-import FileHandle from '../packages/dynamic-form/index'
-import TestModule from '../packages/test-module/index'
+import DynamicForm from '../packages/dynamic-form/index'
 import { version } from '../package.json'
 
-const components = [FileHandle, TestModule]
+const components = [DynamicForm]
 
 const install = function (Vue) {
   if (install.installed) {
@@ -17,4 +16,4 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-export default { version, install, FileHandle, TestModule }
+export default { version, install, DynamicForm }

@@ -43,12 +43,11 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator'
-// eslint-disable-next-line no-unused-vars
-import { Fields } from '@/types/common'
-// eslint-disable-next-line no-unused-vars
 import { InputTypeMap } from './utils'
 // eslint-disable-next-line no-unused-vars
 import { FormModel } from 'ant-design-vue'
+// eslint-disable-next-line no-unused-vars
+import { Fields } from '@/types/common'
 
 @Component({
   components: {}
